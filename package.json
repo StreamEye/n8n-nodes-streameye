@@ -1,0 +1,61 @@
+{
+	"name": "@streameye/n8n-nodes-streameye",
+	"version": "0.1.0",
+	"description": "n8n community node for the Streameye API",
+	"license": "MIT",
+	"homepage": "https://github.com/StreamEye/n8n-nodes-streameye#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"streameye",
+		"banners",
+		"creative"
+	],
+	"engines": {
+		"node": ">=20.15"
+	},
+	"author": {
+		"name": "StreamEye",
+		"email": "hello@streameye.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/StreamEye/n8n-nodes-streameye.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "node -r dotenv/config ./node_modules/@n8n/node-cli/bin/n8n-node.mjs dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/StreameyeOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Streameye/Streameye.node.js"
+		]
+	},
+	"devDependencies": {
+        "@n8n/node-cli": "0.33.1",
+        "eslint": "9.29.0",
+        "prettier": "3.6.2",
+        "release-it": "19.2.4",
+        "typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
