@@ -144,11 +144,10 @@ export const galleryListAssetsDescription: INodeProperties[] = [
 				operation: ['listGalleryAssets'],
 			},
 		},
-		// eslint-disable-next-line n8n-nodes-base/node-param-options-type-unsorted-items
 		options: [
 			{
-				name: 'None',
-				value: '',
+				name: 'Created At',
+				value: 'createdAt',
 			},
 			{
 				name: 'ID',
@@ -159,8 +158,8 @@ export const galleryListAssetsDescription: INodeProperties[] = [
 				value: 'name',
 			},
 			{
-				name: 'Created At',
-				value: 'createdAt',
+				name: 'None',
+				value: '',
 			},
 			{
 				name: 'Updated At',

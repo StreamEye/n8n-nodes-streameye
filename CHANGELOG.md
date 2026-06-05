@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.2] - 2026-06-05
+
+### Changed
+
+- Renamed `List` operations to `Get Many` (Feed, Wizard, Gallery) per n8n naming conventions; internal operation values unchanged
+- Simplified operation action/description labels (e.g. "Get a wizard by ID" → "Get wizard")
+- Added a description to the Gallery operation
+
+### Removed
+
+- All ESLint disable directives — operation and Order By option lists are now alphabetically sorted to satisfy n8n lint with no suppressions
+
 ## [1.0.1] - 2026-06-05
 
 ### Changed

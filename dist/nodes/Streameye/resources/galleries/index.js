@@ -18,9 +18,10 @@ exports.galleryDescription = [
         },
         options: [
             {
-                name: 'List Gallery Assets',
+                name: 'Get Many',
                 value: 'listGalleryAssets',
-                action: 'List gallery assets',
+                action: 'Get gallery assets',
+                description: 'Get gallery assets',
             },
         ],
         default: 'listGalleryAssets',

@@ -219,11 +219,10 @@ export const wizardListDescription: INodeProperties[] = [
 				operation: ['list'],
 			},
 		},
-		// eslint-disable-next-line n8n-nodes-base/node-param-options-type-unsorted-items
 		options: [
 			{
-				name: 'None',
-				value: '',
+				name: 'Created At',
+				value: 'createdAt',
 			},
 			{
 				name: 'ID',
@@ -234,12 +233,12 @@ export const wizardListDescription: INodeProperties[] = [
 				value: 'name',
 			},
 			{
-				name: 'Type',
-				value: 'type',
+				name: 'None',
+				value: '',
 			},
 			{
-				name: 'Created At',
-				value: 'createdAt',
+				name: 'Type',
+				value: 'type',
 			},
 			{
 				name: 'Updated At',

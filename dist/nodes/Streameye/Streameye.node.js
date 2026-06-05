@@ -69,6 +69,7 @@ class Streameye {
             defaults: {
                 name: 'Streameye',
             },
+            usableAsTool: undefined,
             inputs: [n8n_workflow_1.NodeConnectionTypes.Main],
             outputs: [n8n_workflow_1.NodeConnectionTypes.Main],
             credentials: [{ name: 'streameyeOAuth2Api', required: true }],

@@ -118,8 +118,8 @@ exports.galleryListAssetsDescription = [
         },
         options: [
             {
-                name: 'None',
-                value: '',
+                name: 'Created At',
+                value: 'createdAt',
             },
             {
                 name: 'ID',
@@ -130,8 +130,8 @@ exports.galleryListAssetsDescription = [
                 value: 'name',
             },
             {
-                name: 'Created At',
-                value: 'createdAt',
+                name: 'None',
+                value: '',
             },
             {
                 name: 'Updated At',

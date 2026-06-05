@@ -89,7 +89,6 @@ const normalizeApiResult = (result: unknown): INodeExecutionData[] => {
 	return [{ json: result as IDataObject }];
 };
 
-// eslint-disable-next-line @n8n/community-nodes/node-usable-as-tool -- intentionally not exposed as an AI Agent tool
 export class Streameye implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Streameye',
@@ -102,6 +101,7 @@ export class Streameye implements INodeType {
 		defaults: {
 			name: 'Streameye',
 		},
+		usableAsTool: undefined,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
 		credentials: [{ name: 'streameyeOAuth2Api', required: true }],

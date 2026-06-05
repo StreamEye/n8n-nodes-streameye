@@ -244,11 +244,10 @@ export const feedListDescription: INodeProperties[] = [
 				operation: ['list'],
 			},
 		},
-		// eslint-disable-next-line n8n-nodes-base/node-param-options-type-unsorted-items
 		options: [
 			{
-				name: 'None',
-				value: '',
+				name: 'Created At',
+				value: 'createdAt',
 			},
 			{
 				name: 'ID',
@@ -259,20 +258,20 @@ export const feedListDescription: INodeProperties[] = [
 				value: 'name',
 			},
 			{
+				name: 'None',
+				value: '',
+			},
+			{
 				name: 'Type',
 				value: 'type',
 			},
 			{
-				name: 'Wizard ID',
-				value: 'wid',
-			},
-			{
-				name: 'Created At',
-				value: 'createdAt',
-			},
-			{
 				name: 'Updated At',
 				value: 'updatedAt',
+			},
+			{
+				name: 'Wizard ID',
+				value: 'wid',
 			},
 		],
 		default: 'updatedAt',

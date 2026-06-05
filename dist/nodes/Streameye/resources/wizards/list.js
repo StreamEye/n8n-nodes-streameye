@@ -172,8 +172,8 @@ exports.wizardListDescription = [
         },
         options: [
             {
-                name: 'None',
-                value: '',
+                name: 'Created At',
+                value: 'createdAt',
             },
             {
                 name: 'ID',
@@ -184,12 +184,12 @@ exports.wizardListDescription = [
                 value: 'name',
             },
             {
-                name: 'Type',
-                value: 'type',
+                name: 'None',
+                value: '',
             },
             {
-                name: 'Created At',
-                value: 'createdAt',
+                name: 'Type',
+                value: 'type',
             },
             {
                 name: 'Updated At',

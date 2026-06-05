@@ -196,8 +196,8 @@ exports.feedListDescription = [
         },
         options: [
             {
-                name: 'None',
-                value: '',
+                name: 'Created At',
+                value: 'createdAt',
             },
             {
                 name: 'ID',
@@ -208,20 +208,20 @@ exports.feedListDescription = [
                 value: 'name',
             },
             {
+                name: 'None',
+                value: '',
+            },
+            {
                 name: 'Type',
                 value: 'type',
             },
             {
-                name: 'Wizard ID',
-                value: 'wid',
-            },
-            {
-                name: 'Created At',
-                value: 'createdAt',
-            },
-            {
                 name: 'Updated At',
                 value: 'updatedAt',
+            },
+            {
+                name: 'Wizard ID',
+                value: 'wid',
             },
         ],
         default: 'updatedAt',

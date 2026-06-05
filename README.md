@@ -89,7 +89,7 @@ The node exposes three resources — **Feed**, **Gallery** and **Wizard**. All c
 | 📥 | **Get Files** | Download the generated files for a feed. | **Feed ID** *(required)* |
 | 🖼️ | **Get Images** | Get rendered image URLs for a feed. | **Feed ID** *(required)*, **Quality** (defaults to 93), **Type** (JPG / PNG / WEBP, defaults to JPG) |
 | 🔗 | **Get Permalinks** | Get permalink URLs for a feed. | **Feed ID** *(required)* |
-| 📋 | **List** | List feeds (filterable, sortable, paginated). | Optional **Wizard ID**, **Keyword**, **Type**, **Filters** (created/updated date ranges), **Order By** + **Order Direction**, **Page**, **Page Size** |
+| 📋 | **Get Many** | Get feeds (filterable, sortable, paginated). | Optional **Wizard ID**, **Keyword**, **Type**, **Filters** (created/updated date ranges), **Order By** + **Order Direction**, **Page**, **Page Size** |
 
 > ℹ️ **Mixed-type runs.** **Get Images** and **Get Permalinks** are not supported for `html5` feeds. When a batch contains such items, those items are skipped with an n8n warning and empty output rather than failing the whole workflow.
 
@@ -97,14 +97,14 @@ The node exposes three resources — **Feed**, **Gallery** and **Wizard**. All c
 
 | | Operation | Description | Key inputs |
 |---|-----------|-------------|------------|
-| 📂 | **List Gallery Assets** | List the assets in a gallery (filterable, sortable, paginated). | **Gallery ID** *(required)*; optional **Keyword**, **Filters** (Category), **Order By** + **Order Direction**, **Page**, **Page Size** |
+| 📂 | **Get Many** | Get assets in a gallery (filterable, sortable, paginated). | **Gallery ID** *(required)*; optional **Keyword**, **Filters** (Category), **Order By** + **Order Direction**, **Page**, **Page Size** |
 
 ### 🧩 Wizard
 
 | | Operation | Description | Key inputs |
 |---|-----------|-------------|------------|
 | 🔍 | **Get by ID** | Retrieve a wizard's `schema`, `data` (defaults) and supported `languages`. The compressed `schema`/`data` fields are decompressed automatically. | **Wizard ID** *(required)* |
-| 📋 | **List** | List wizards (filterable, sortable, paginated). | Optional **Keyword**, **Type**, **Filters** (created/updated date ranges), **Order By** + **Order Direction**, **Page**, **Page Size** |
+| 📋 | **Get Many** | Get wizards (filterable, sortable, paginated). | Optional **Keyword**, **Type**, **Filters** (created/updated date ranges), **Order By** + **Order Direction**, **Page**, **Page Size** |
 
 ---
 
@@ -250,9 +250,11 @@ Some Streameye fields are stored gzip-compressed and base64-encoded (e.g. a wiza
 
 ## Version History
 
-### 0.1.0
+### 1.0.x
 
-Initial release. Feed (Create, Update, Get by ID, Get Files, Get Images, Get Permalinks, List), Gallery (List Gallery Assets) and Wizard (Get by ID, List) operations, OAuth2 authentication, feed-data validation against the wizard schema, automatic `asset_picker` resolution, and automatic gzip/base64 (de)compression of wizard `schema`/`data`.
+First stable release. Feed (Create, Update, Get by ID, Get Files, Get Images, Get Permalinks, Get Many), Gallery (Get Many) and Wizard (Get by ID, Get Many) operations, OAuth2 authentication, feed-data validation against the wizard schema, automatic `asset_picker` resolution, and automatic gzip/base64 (de)compression of wizard `schema`/`data`. Published via GitHub Actions with npm provenance.
+
+See [CHANGELOG.md](./CHANGELOG.md) for the full history.
 
 ---
 
