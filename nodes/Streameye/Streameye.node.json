@@ -2,7 +2,7 @@
 	"node": "@streameye/n8n-nodes-streameye",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Development", "Developer Tools"],
+	"categories": ["Marketing", "Productivity", "Utility"],
 	"resources": {
 		"credentialDocumentation": [
 			{

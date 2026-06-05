@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1] - 2026-06-05
+
+### Changed
+
+- Node categories updated to `Marketing`, `Productivity`, `Utility` (was `Development`)
+- CI/publish workflows bumped to `actions/checkout@v5` and `actions/setup-node@v5` (Node 20 deprecation)
+
 ## [1.0.0] - 2026-06-05
 
 First stable release. Same functionality as 0.1.0, promoted to a stable version
