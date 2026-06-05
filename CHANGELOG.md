@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.0] - 2026-06-05
+
+First stable release. Same functionality as 0.1.0, promoted to a stable version
+and published via GitHub Actions with npm provenance (OIDC trusted publishing).
+
 ## [0.1.0] - 2026-06-05
 
 Initial release.
