@@ -171,13 +171,6 @@ export class Streameye implements INodeType {
 				}
 
 				const variables = await resourceOperation.getVariables(this, itemIndex, jsonParser, validatedData);
-
-				if (resource === 'feeds' && (operation === 'create' || operation === 'update')) {
-					this.logger.info(
-						`Streameye feed ${operation} → GraphQL request\nquery: ${resourceOperation.query}\nvariables: ${JSON.stringify(variables, null, 2)}`,
-					);
-				}
-
 				const result = await this.helpers.httpRequestWithAuthentication.call(
 					this,
 					'streameyeOAuth2Api',

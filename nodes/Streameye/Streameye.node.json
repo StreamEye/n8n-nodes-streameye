@@ -2,7 +2,7 @@
 	"node": "@streameye/n8n-nodes-streameye",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Marketing", "Productivity", "Utility"],
+	"categories": ["Marketing & Content", "Productivity", "Utility"],
 	"resources": {
 		"credentialDocumentation": [
 			{
