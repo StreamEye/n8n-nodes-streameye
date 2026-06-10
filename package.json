@@ -1,6 +1,6 @@
 {
 	"name": "@streameye/n8n-nodes-streameye",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "n8n community node for the Streameye API",
 	"license": "MIT",
 	"homepage": "https://github.com/StreamEye/n8n-nodes-streameye#readme",
