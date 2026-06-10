@@ -75,7 +75,6 @@ exports.feedUpdateDescription = [
         displayName: 'Name',
         name: 'name',
         type: 'string',
-        required: true,
         displayOptions: {
             show: {
                 resource: ['feeds'],
@@ -89,7 +88,6 @@ exports.feedUpdateDescription = [
         displayName: 'Language',
         name: 'lang',
         type: 'string',
-        required: true,
         displayOptions: {
             show: {
                 resource: ['feeds'],

@@ -83,8 +83,8 @@ The node exposes three resources — **Feed**, **Gallery** and **Wizard**. All c
 
 | | Operation | Description | Key inputs |
 |---|-----------|-------------|------------|
-| ➕ | **Create** | Create a feed from a wizard. The `Data` is validated against the wizard schema before sending (see [How It Works](#how-it-works)). | **Wizard ID** *(required)*, **Name** *(required)*, **Language** *(required, defaults to `en`)*, **Data** — feed data as JSON *(required)*; optional **Looping** (defaults to 2) |
-| ✏️ | **Update** | Update an existing feed's data. `Data` is validated against the wizard schema. | **Feed ID** *(required)*, **Name** *(required)*, **Language** *(required)*, **Data** — JSON *(required)*; optional **Looping** (leave at 0 to keep current) |
+| ➕ | **Create** | Create a feed from a wizard. The `Data` is validated against the wizard schema before sending (see [How It Works](#how-it-works)). | **Wizard ID** *(required)*, **Name** *(required)*, **Language** *(required, default is `en`)*, **Data** — feed data as JSON *(required)*; optional **Looping** (defaults to 2) |
+| ✏️ | **Update** | Update an existing feed's data. `Data` is validated against the wizard schema. | **Feed ID** *(required)*, **Data** — JSON *(required)*; optional **Name**, **Language** (both kept unchanged if left empty), **Looping** (leave at 0 to keep current) |
 | 🔍 | **Get by ID** | Retrieve a single feed. | **Feed ID** *(required)* |
 | 📥 | **Get Files** | Download the generated files for a feed. | **Feed ID** *(required)* |
 | 🖼️ | **Get Images** | Get rendered image URLs for a feed. | **Feed ID** *(required)*, **Quality** (defaults to 93), **Type** (JPG / PNG / WEBP, defaults to JPG) |

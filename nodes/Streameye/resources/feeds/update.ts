@@ -95,7 +95,6 @@ export const feedUpdateDescription: INodeProperties[] = [
 		displayName: 'Name',
 		name: 'name',
 		type: 'string',
-		required: true,
 		displayOptions: {
 			show: {
 				resource: ['feeds'],
@@ -109,7 +108,6 @@ export const feedUpdateDescription: INodeProperties[] = [
 		displayName: 'Language',
 		name: 'lang',
 		type: 'string',
-		required: true,
 		displayOptions: {
 			show: {
 				resource: ['feeds'],
