@@ -1,6 +1,6 @@
 {
 	"name": "@streameye/n8n-nodes-streameye",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "n8n community node for the Streameye API",
 	"license": "MIT",
 	"homepage": "https://github.com/StreamEye/n8n-nodes-streameye#readme",
@@ -49,11 +49,11 @@
 		]
 	},
 	"devDependencies": {
-        "@n8n/node-cli": "0.33.1",
-        "eslint": "9.29.0",
-        "prettier": "3.6.2",
-        "release-it": "19.2.4",
-        "typescript": "5.9.2"
+		"@n8n/node-cli": "0.33.1",
+		"eslint": "9.29.0",
+		"prettier": "3.6.2",
+		"release-it": "19.2.4",
+		"typescript": "5.9.2"
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
